@@ -1,2 +1,26 @@
-# Auto detect text files and perform LF normalization
+# Auto detect text files and normalize line endings
 * text=auto
+
+# Force Python files to use LF (Linux style)
+*.py text eol=lf
+
+# CSV files
+*.csv text eol=lf
+
+# Jupyter notebooks
+*.ipynb text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Images (no diff)
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# Model files (binary)
+*.pkl binary
+
+# Prevent large files from diff issues
+*.zip binary
+*.exe binary
